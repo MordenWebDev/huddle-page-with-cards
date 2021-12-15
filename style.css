@@ -1,0 +1,242 @@
+/* css reset */
+*{
+    box-sizing: border-box;
+}
+/* body default */
+body{
+    margin: 0%;
+    font-family: 'Open Sans', sans-serif;
+
+}
+/* header style */
+header{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: hsl(195,100%,95%);
+    background-image: url(images/bg-hero-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+/* nav bar style */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* hero section style */
+.hero{
+    display: flex;
+    padding:2rem 5rem;
+    justify-content: space-between;
+    
+}
+
+.heroimg img{
+    width: 100%;
+}
+/* button default style */
+.btn{
+    border: none;
+    background-color: hsl(322,100%,66%);
+    padding: 1rem 2rem;
+    border-radius: 1000px;
+    font-size: inherit;
+    color: white;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color:hsl(322,100%,56%); ;
+}
+nav a{
+    text-decoration: none;
+    color: hsl(192,100%,9%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 1000px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+nav a:hover{
+    background-color: rgb(245, 245, 245);
+}
+/* start of main */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* different section content cards */
+/* i know ima repeating my self */
+/* i did not use dry principle on purpose */
+
+.growtogether{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    max-width: 900px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #cacaca;
+   
+}
+.growimg img{
+    width: 100%;
+}
+.Flowing-Conversations{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    max-width: 900px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #cacaca;
+  
+}
+.flowimg img{
+    width: 100%;
+}
+.Your-Users{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    max-width: 900px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #cacaca;
+    
+}
+.userimg img{
+    width: 100%;
+}
+.cpara{
+    padding: 1rem;
+    line-height: 1.5;
+}
+.ctitle{
+    padding: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+/* footer style */
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+/* card overlaping style */
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px #cacaca;
+    padding: 1rem;
+    margin-bottom: -3rem;
+    position: relative;
+    z-index: 1;
+    border-radius: .5rem;
+}
+/* footer inside footer stying */
+.footer{
+    background-color: hsl(192,100%,9%);
+    width: 100%;
+    padding: 4rem 0rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+    
+}
+.footer li{
+    list-style: none;
+}
+.f4 a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    margin: .5rem;
+    border-radius: 100%;
+    border: 1px solid white;
+}
+.flogowhite{
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(331deg)
+    brightness(109%) contrast(101%);
+    margin-bottom: 3rem;
+}
+.f1{
+    flex-basis: 350px;
+}
+.footer li{
+    margin: 1rem 0;
+}
+.footer li img{
+    margin-right: .5rem;
+}
+/* .f5{
+    align-self: flex-end;
+} */
+.f4{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+/* media query start */
+/* media query fro device lower than 700px */
+
+@media only screen and (max-width: 770px) {
+    
+    nav img{
+      width: 100px;
+    }
+  .hero{
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 1rem;
+      text-align: center;
+  }
+  .heroimg{
+      margin: 1rem;
+      width: 350px;
+  }
+  .growtogether,.Flowing-Conversations ,.Your-Users{
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1rem
+  }
+  .card{
+      width: 300px;
+      text-align: center;
+  }
+  footer{
+   flex-direction: column;   
+  }
+  .footer{
+      flex-direction: column;
+  }
+  .f4{
+      text-align: center;
+      margin: 1rem 1rem;
+      padding: 1rem;
+
+  }
+  .f5 p{
+      margin-top: 2rem;
+  }
+
+
+  }
